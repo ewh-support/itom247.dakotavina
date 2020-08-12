@@ -880,57 +880,73 @@
                     </select>
                   </div>
                 </div>
+
+
                 <div class="form-group">
+                  <h3>
+                    <label class="col-sm-3 col-lg-2 control-label">Thời tiết hôm nay</label>
+                    <div class="col-sm-9 col-lg-10 controls">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" value="" /> Trời đẹp
+                      </label>
+                      <label class="checkbox-inline">
+                        <input type="checkbox" value="" /> Mưa nhẹ
+                      </label>
+                      <label class="checkbox-inline">
+                        <input type="checkbox" value="" /> Mưa lớn
+                      </label>
+                      <label class="checkbox-inline">
+                        <input type="checkbox" value="" /> Nắng yếu
+                      </label>
+                      <label class="checkbox-inline">
+                        <input type="checkbox" value="" /> Nắng nóng
+                      </label>
+                  </h3>
+                  </div>
+
+                  <div class="form-group">
                     <h3>
-                      <label class="col-sm-3 col-lg-2 control-label">Thời tiết hôm nay</label>
+                      <label class="col-sm-3 col-lg-2 control-label">Đánh giá trực quan</label>
                       <div class="col-sm-9 col-lg-10 controls">
                         <label class="radio-inline">
-                          <input type="radio" name="optionsRadios2" value="option1" /> Trời đẹp
+                          <input type="radio" name="optionsRadios2" value="option1" /> Diễn biến xấu
                         </label>
                         <label class="radio-inline">
-                          <input type="radio" name="optionsRadios2" value="option2" checked /> Mưa ít
+                          <input type="radio" name="optionsRadios2" value="option2" checked /> Ổn định
                         </label>
                         <label class="radio-inline">
-                          <input type="radio" name="optionsRadios2" value="option2" /> Mưa lớn
+                          <input type="radio" name="optionsRadios2" value="option2" /> Tiến triển tốt
                         </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="optionsRadios2" value="option2" checked /> Nắng ít
-                          </label>
-                          <label class="radio-inline">
-                            <input type="radio" name="optionsRadios2" value="option2" /> Nắng nóng
-                          </label>
                       </div>
                     </h3>
                   </div>
-                <div class="form-group">
-                  <h3>
-                    <label class="col-sm-3 col-lg-2 control-label">Đánh giá trực quan</label>
+                  <div class="form-group">
+                    <h3>
+                      <label class="col-sm-3 col-lg-2 control-label">Lưu ý</label>
+                    </h3>
                     <div class="col-sm-9 col-lg-10 controls">
-                      <label class="radio-inline">
-                        <input type="radio" name="optionsRadios2" value="option1" /> Diễn biến xấu
-                      </label>
-                      <label class="radio-inline">
-                        <input type="radio" name="optionsRadios2" value="option2" checked /> Ổn định
-                      </label>
-                      <label class="radio-inline">
-                        <input type="radio" name="optionsRadios2" value="option2" /> Tiến triển tốt
-                      </label>
+                      <textarea class="form-control" rows="3"></textarea>
                     </div>
-                  </h3>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2">
+                      <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-check"></i> Hoàn thành và gửi </button>
+                      <button type="button" class="btn">Hủy bỏ</button>
+                    </div>
+                  </div>
                 </div>
               </form>
             </div>
           </div>
         </div>
-        <div>
-          <p></p>
-        </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="box box-orange">
+            <div class="box box-red">
               <div class="box-title">
                 <h3>
-                  <i class="fa fa-bars"></i> Chụp ảnh</h3>
+                  <i class="fa fa-bars"></i> Thức ăn mỗi ngày</h3>
                 <div class="box-tool">
                   <a data-action="collapse" href="#">
                     <i class="fa fa-chevron-up"></i>
@@ -940,113 +956,368 @@
                   </a>
                 </div>
               </div>
-              <div class="form-group">
-                <label class="col-sm-3 col-lg-2 control-label"></label>
-                <p></p>
-                <div class="col-sm-9 col-lg-10 controls">
-                  <div class="col-md-6">
-                    <div class="fileupload fileupload-new" data-provides="fileupload">
-                      <div class="fileupload-new img-thumbnail" style="width: 200px; height: 150px;">
-                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
-                      </div>
-                      <div class="fileupload-preview fileupload-exists img-thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
-                      <div>
-                        <span class="btn btn-default btn-file">
-                          <span class="fileupload-new">Chụp ảnh nước</span>
-                          <span class="fileupload-exists">Chụp lại</span>
-                          <input type="file" class="file-input" />
-                        </span>
-                        <a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Xóa</a>
+              <div class="box-content">
+                <form action="#" class="form-horizontal">
+                  <div class="form-group">
+                    <h3>
+                      <label class="col-sm-3 col-lg-2 control-label">Thức ăn cữ 1</label>
+                    </h3>
+                    <div class="col-sm-9 col-lg-10 controls">
+                      <input type="text" placeholder="Số kg" class="form-control input-lg" />
+                      <span class="help-inline"> Cho ăn bằng tay</span>
+                    </div>
+
+                    <div class="form-group">
+                      <h4>
+                        <label class="col-sm-3 col-lg-2 control-label">Đánh giá cữ 1</label>
+                        <div class="col-sm-9 col-lg-10 controls">
+                          <label class="checkbox-inline">
+                            <input type="checkbox" value="" /> Ăn tốt 100%
+                          </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" value="" /> Còn dư 10%
+                          </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" value="" /> Còn dư 20%
+                          </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" value="" /> Còn dư 30%
+                          </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" value="" /> Còn dư 50%
+                          </label>
+                      </h4>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="fileupload fileupload-new" data-provides="fileupload">
-                      <div class="fileupload-new img-thumbnail" style="width: 200px; height: 150px;">
-                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+                    <div class="form-group">
+                      <h3>
+                        <label class="col-sm-3 col-lg-2 control-label">Thức ăn cữ 2</label>
+                      </h3>
+                      <div class="col-sm-9 col-lg-10 controls">
+                        <input type="text" placeholder="Số kg" class="form-control input-lg" />
+                        <span class="help-inline"> Cho ăn bằng tay</span>
                       </div>
-                      <div class="fileupload-preview fileupload-exists img-thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
-                      <div>
-                        <span class="btn btn-default btn-file">
-                          <span class="fileupload-new">Chụp ảnh tôm</span>
-                          <span class="fileupload-exists">Chụp lại</span>
-                          <input type="file" class="file-input" />
-                        </span>
-                        <a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Xóa</a>
+                      <div class="form-group">
+                        <h4>
+                          <label class="col-sm-3 col-lg-2 control-label">Đánh giá cữ 2</label>
+                          <div class="col-sm-9 col-lg-10 controls">
+                            <label class="checkbox-inline">
+                              <input type="checkbox" value="" /> Ăn tốt 100%
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" value="" /> Còn dư 10%
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" value="" /> Còn dư 20%
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" value="" /> Còn dư 30%
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" value="" /> Còn dư 50%
+                            </label>
+                        </h4>
+                        </div>
                       </div>
+                      <div class="form-group">
+                        <h3>
+                          <label class="col-sm-3 col-lg-2 control-label">Thức ăn cữ 3</label>
+                        </h3>
+                        <div class="col-sm-9 col-lg-10 controls">
+                          <input type="text" placeholder="Số kg" class="form-control input-lg" />
+                          <span class="help-inline"> Cho ăn bằng tay</span>
+                        </div>
+
+                        <div class="form-group">
+                          <h4>
+                            <label class="col-sm-3 col-lg-2 control-label">Đánh giá cữ 3</label>
+                            <div class="col-sm-9 col-lg-10 controls">
+                              <label class="checkbox-inline">
+                                <input type="checkbox" value="" /> Ăn tốt 100%
+                              </label>
+                              <label class="checkbox-inline">
+                                <input type="checkbox" value="" /> Còn dư 10%
+                              </label>
+                              <label class="checkbox-inline">
+                                <input type="checkbox" value="" /> Còn dư 20%
+                              </label>
+                              <label class="checkbox-inline">
+                                <input type="checkbox" value="" /> Còn dư 30%
+                              </label>
+                              <label class="checkbox-inline">
+                                <input type="checkbox" value="" /> Còn dư 50%
+                              </label>
+                          </h4>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <h3>
+                            <label class="col-sm-3 col-lg-2 control-label">Thức ăn cữ 4</label>
+                          </h3>
+                          <div class="col-sm-9 col-lg-10 controls">
+                            <input type="text" placeholder="Số kg" class="form-control input-lg" />
+                            <span class="help-inline"> Cho ăn bằng tay</span>
+                          </div>
+
+                          <div class="form-group">
+                            <h4>
+                              <label class="col-sm-3 col-lg-2 control-label">Đánh giá cữ 4</label>
+                              <div class="col-sm-9 col-lg-10 controls">
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" value="" /> Ăn tốt 100%
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" value="" /> Còn dư 10%
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" value="" /> Còn dư 20%
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" value="" /> Còn dư 30%
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" value="" /> Còn dư 50%
+                                </label>
+                            </h4>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <h3>
+                              <label class="col-sm-3 col-lg-2 control-label">Tổng thức</label>
+                            </h3>
+                            <div class="col-sm-9 col-lg-10 controls">
+                              <input type="text" placeholder="Số kg" class="form-control input-lg" />
+                              <span class="help-inline"> Dùng cho ao ăn bằng máy. Ăn tay không điền ô này</span>
+                            </div>
+
+                            <div class="form-group">
+                              <h4>
+                                <label class="col-sm-3 col-lg-2 control-label">Đánh giá lượng ăn ngày</label>
+                                <div class="col-sm-9 col-lg-10 controls">
+                                  <label class="checkbox-inline">
+                                    <input type="checkbox" value="" /> Ăn tốt 100%
+                                  </label>
+                                  <label class="checkbox-inline">
+                                    <input type="checkbox" value="" /> Còn dư 10%
+                                  </label>
+                                  <label class="checkbox-inline">
+                                    <input type="checkbox" value="" /> Còn dư 20%
+                                  </label>
+                                  <label class="checkbox-inline">
+                                    <input type="checkbox" value="" /> Còn dư 30%
+                                  </label>
+                                  <label class="checkbox-inline">
+                                    <input type="checkbox" value="" /> Còn dư 50%
+                                  </label>
+                              </h4>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <h3>
+                                <label class="col-sm-3 col-lg-2 control-label">Đánh giá khách quan</label>
+                                <div class="col-sm-9 col-lg-10 controls">
+                                  <label class="checkbox-inline">
+                                    <input type="checkbox" value="" /> Tôm ăn tốt
+                                  </label>
+                                  <label class="checkbox-inline">
+                                    <input type="checkbox" value="" /> Thiếu thức ăn
+                                  </label>
+                                  <label class="checkbox-inline">
+                                    <input type="checkbox" value="" /> Tôm ăn yếu
+                                  </label>
+                                  <label class="checkbox-inline">
+                                    <input type="checkbox" value="" /> Thừa thức ăn
+                                  </label>
+                              </h3>
+                              </div>
+                              <div class="form-group">
+                                <h3>
+                                  <label class="col-sm-3 col-lg-2 control-label">Đánh giá trực quan</label>
+                                  <div class="col-sm-9 col-lg-10 controls">
+                                    <label class="radio-inline">
+                                      <input type="radio" name="optionsRadios2" value="option1" /> Diễn biến xấu
+                                    </label>
+                                    <label class="radio-inline">
+                                      <input type="radio" name="optionsRadios2" value="option2" checked /> Ổn định
+                                    </label>
+                                    <label class="radio-inline">
+                                      <input type="radio" name="optionsRadios2" value="option2" /> Tiến triển tốt
+                                    </label>
+                                  </div>
+                                </h3>
+                              </div>
+                              <div class="form-group">
+                                <h3>
+                                  <label class="col-sm-3 col-lg-2 control-label">Lưu ý</label>
+                                </h3>
+                                <div class="col-sm-9 col-lg-10 controls">
+                                  <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2">
+                                  <button type="submit" class="btn btn-primary">
+                                    <i class="fa fa-check"></i> Hoàn thành và gửi </button>
+                                  <button type="button" class="btn">Hủy bỏ</button>
+                                </div>
+                              </div>
+                            </div>
+                </form>
+                </div>
+                </div>
+                </div>
+                <div>
+                  <p></p>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="box box-orange">
+                      <div class="box-title">
+                        <h3>
+                          <i class="fa fa-bars"></i> Chụp ảnh</h3>
+                        <div class="box-tool">
+                          <a data-action="collapse" href="#">
+                            <i class="fa fa-chevron-up"></i>
+                          </a>
+                          <a data-action="close" href="#">
+                            <i class="fa fa-times"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 col-lg-2 control-label"></label>
+                        <p></p>
+                        <div class="col-sm-9 col-lg-10 controls">
+                          <div class="col-md-6">
+                            <div class="fileupload fileupload-new" data-provides="fileupload">
+                              <div class="fileupload-new img-thumbnail" style="width: 200px; height: 150px;">
+                                <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+                              </div>
+                              <div class="fileupload-preview fileupload-exists img-thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+                              <div>
+                                <span class="btn btn-default btn-file">
+                                  <span class="fileupload-new">Chụp ảnh nước</span>
+                                  <span class="fileupload-exists">Chụp lại</span>
+                                  <input type="file" class="file-input" />
+                                </span>
+                                <a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Xóa</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="fileupload fileupload-new" data-provides="fileupload">
+                              <div class="fileupload-new img-thumbnail" style="width: 200px; height: 150px;">
+                                <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+                              </div>
+                              <div class="fileupload-preview fileupload-exists img-thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+                              <div>
+                                <span class="btn btn-default btn-file">
+                                  <span class="fileupload-new">Chụp ảnh tôm</span>
+                                  <span class="fileupload-exists">Chụp lại</span>
+                                  <input type="file" class="file-input" />
+                                </span>
+                                <a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Xóa</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <h4>
+                          <label class="col-sm-3 col-lg-2 control-label">Đánh giá khách quan</label>
+                          <div class="col-sm-9 col-lg-10 controls">
+                            <label class="checkbox-inline">
+                              <input type="checkbox" value="" /> Tôm mềm vỏ
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" value="" /> Tôm kéo đàn
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" value="" /> Tôm yếu gan
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" value="" /> Đường ruột yếu
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" value="" /> Tôm rớt đáy
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" value="" /> Tảo tàn
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" value="" /> Đáy ao nhớt
+                            </label>
+                          </div>
+                        </h4>
+                      </div>
+                      <div class="form-group">
+                        <h3>
+                          <label class="col-sm-3 col-lg-2 control-label">Lưu ý</label>
+                        </h3>
+                        <div class="col-sm-9 col-lg-10 controls">
+                          <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2">
+                          <button type="submit" class="btn btn-primary">
+                            <i class="fa fa-check"></i> Hoàn thành và gửi </button>
+                          <button type="button" class="btn">Hủy bỏ</button>
+                        </div>
+                      </div>
+                      </form>
                     </div>
                   </div>
                 </div>
-              </div>
-              </form>
-              <div class="form-group">
-                <h3>
-                  <label class="col-sm-3 col-lg-2 control-label">Lưu ý</label>
-                </h3>
-                <div class="col-sm-9 col-lg-10 controls">
-                  <textarea class="form-control" rows="3"></textarea>
+
+                <!-- END Main Content -->
+
+                <footer>
+                  <p>2013 © FLATY Admin Template.</p>
+                </footer>
+
+                <a id="btn-scrollup" class="btn btn-circle btn-lg" href="#">
+                  <i class="fa fa-chevron-up"></i>
+                </a>
                 </div>
-              </div>
-
-              <div class="form-group">
-                <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2">
-                  <button type="submit" class="btn btn-primary">
-                    <i class="fa fa-check"></i> Hoàn thành và gửi </button>
-                  <button type="button" class="btn">Hủy bỏ</button>
+                <!-- END Content -->
                 </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- END Main Content -->
-
-    <footer>
-      <p>2013 © FLATY Admin Template.</p>
-    </footer>
-
-    <a id="btn-scrollup" class="btn btn-circle btn-lg" href="#">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
-  <!-- END Content -->
-  </div>
-  <!-- END Container -->
+                <!-- END Container -->
 
 
-  <!--basic scripts-->
-  <script src="../../ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="assets/jquery/jquery-2.1.1.min.js"><\/script>')</script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-  <script src="assets/jquery-cookie/jquery.cookie.js"></script>
+                <!--basic scripts-->
+                <script src="../../ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>window.jQuery || document.write('<script src="assets/jquery/jquery-2.1.1.min.js"><\/script>')</script>
+                <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+                <script src="assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+                <script src="assets/jquery-cookie/jquery.cookie.js"></script>
 
-  <!--page specific plugin scripts-->
-  <!--page specific plugin scripts-->
-  <script type="text/javascript" src="assets/chosen-bootstrap/chosen.jquery.min.js"></script>
-  <script type="text/javascript" src="assets/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
-  <script type="text/javascript" src="assets/jquery-tags-input/jquery.tagsinput.min.js"></script>
-  <script type="text/javascript" src="assets/jquery-pwstrength/jquery.pwstrength.min.js"></script>
-  <script type="text/javascript" src="assets/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
-  <script type="text/javascript" src="assets/bootstrap-duallistbox/duallistbox/bootstrap-duallistbox.js"></script>
-  <script type="text/javascript" src="assets/dropzone/downloads/dropzone.min.js"></script>
-  <script type="text/javascript" src="assets/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
-  <script type="text/javascript" src="assets/clockface/js/clockface.js"></script>
-  <script type="text/javascript" src="assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
-  <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-  <script type="text/javascript" src="assets/bootstrap-daterangepicker/date.js"></script>
-  <script type="text/javascript" src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>
-  <script type="text/javascript" src="assets/bootstrap-switch/static/js/bootstrap-switch.js"></script>
-  <script type="text/javascript" src="assets/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
-  <script type="text/javascript" src="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
-  <script type="text/javascript" src="assets/ckeditor/ckeditor.js"></script>
+                <!--page specific plugin scripts-->
+                <!--page specific plugin scripts-->
+                <script type="text/javascript" src="assets/chosen-bootstrap/chosen.jquery.min.js"></script>
+                <script type="text/javascript" src="assets/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+                <script type="text/javascript" src="assets/jquery-tags-input/jquery.tagsinput.min.js"></script>
+                <script type="text/javascript" src="assets/jquery-pwstrength/jquery.pwstrength.min.js"></script>
+                <script type="text/javascript" src="assets/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+                <script type="text/javascript" src="assets/bootstrap-duallistbox/duallistbox/bootstrap-duallistbox.js"></script>
+                <script type="text/javascript" src="assets/dropzone/downloads/dropzone.min.js"></script>
+                <script type="text/javascript" src="assets/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+                <script type="text/javascript" src="assets/clockface/js/clockface.js"></script>
+                <script type="text/javascript" src="assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+                <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+                <script type="text/javascript" src="assets/bootstrap-daterangepicker/date.js"></script>
+                <script type="text/javascript" src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>
+                <script type="text/javascript" src="assets/bootstrap-switch/static/js/bootstrap-switch.js"></script>
+                <script type="text/javascript" src="assets/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+                <script type="text/javascript" src="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+                <script type="text/javascript" src="assets/ckeditor/ckeditor.js"></script>
 
 
-  <!--flaty scripts-->
-  <script src="js/flaty.js"></script>
-  <script src="js/flaty-demo-codes.js"></script>
+                <!--flaty scripts-->
+                <script src="js/flaty.js"></script>
+                <script src="js/flaty-demo-codes.js"></script>
 
 </body>
 
