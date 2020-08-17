@@ -1,0 +1,811 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from thetheme.io/flaty/calendar.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2020 05:35:21 GMT -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Lịch làm việc - iPond247 Pro</title>
+  <base href="/">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!--base css styles-->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+  <!--page specific css styles-->
+  <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.min.css" />
+  <link rel="stylesheet" href="assets/fullcalendar/fullcalendar/fullcalendar.css" />
+
+  <!--flaty css styles-->
+  <link rel="stylesheet" href="css/flaty.css">
+  <link rel="stylesheet" href="css/flaty-responsive.css">
+
+  <link rel="shortcut icon" href="img/favicon.html">
+</head>
+
+<body>
+
+  <!-- BEGIN Theme Setting -->
+  
+  	<div id="theme-setting">
+  		<a href="#"><i class="fa fa-gears fa fa-2x"></i></a>
+  		<ul>
+  			<li>
+  				<span>Skin</span>
+  				<ul class="colors" data-target="body" data-prefix="skin-">
+  					<li class="active">
+  						<a class="blue" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="red" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="green" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="orange" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="yellow" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="pink" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="magenta" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="gray" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="black" href="#"></a>
+  					</li>
+  				</ul>
+  			</li>
+  			<li>
+  				<span>Navbar</span>
+  				<ul class="colors" data-target="#navbar" data-prefix="navbar-">
+  					<li class="active">
+  						<a class="blue" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="red" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="green" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="orange" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="yellow" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="pink" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="magenta" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="gray" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="black" href="#"></a>
+  					</li>
+  				</ul>
+  			</li>
+  			<li>
+  				<span>Sidebar</span>
+  				<ul class="colors" data-target="#main-container" data-prefix="sidebar-">
+  					<li class="active">
+  						<a class="blue" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="red" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="green" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="orange" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="yellow" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="pink" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="magenta" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="gray" href="#"></a>
+  					</li>
+  					<li>
+  						<a class="black" href="#"></a>
+  					</li>
+  				</ul>
+  			</li>
+  			<li>
+  				<span></span>
+  				<a data-target="navbar" href="#"><i class="fa fa-square-o"></i> Fixed Navbar</a>
+  				<a class="hidden-inline-xs" data-target="sidebar" href="#"><i class="fa fa-square-o"></i> Fixed Sidebar</a>
+  			</li>
+  		</ul>
+  	</div>
+  	<!-- END Theme Setting -->
+  
+  	<!-- BEGIN Navbar -->
+  	<div id="navbar" class="navbar">
+  		<button type="button" class="navbar-toggle navbar-btn collapsed" data-toggle="collapse" data-target="#sidebar">
+  <span class="fa fa-bars"></span>
+  </button>
+  		<a class="navbar-brand" href="/index.html">
+  			<small>
+  <i class="fa fa-desktop"></i>
+  iPond247 Pro
+  </small>
+  		</a>
+  
+  		<!-- BEGIN Navbar Buttons -->
+  		<ul class="nav flaty-nav pull-right">
+  			<!-- BEGIN Button Tasks -->
+  			<li class="hidden-xs">
+  				<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+  					<i class="fa fa-tasks"></i>
+  					<span class="badge badge-warning">4</span>
+  				</a>
+  
+  				<!-- BEGIN Tasks Dropdown -->
+  				<ul class="dropdown-navbar dropdown-menu">
+  					<li class="nav-header">
+  						<i class="fa fa-check"></i> 4 việc đang hoàn thành
+  					</li>
+  
+  					<li>
+  						<a href="#">
+  							<div class="clearfix">
+  								<span class="pull-left">Cho tôm ăn</span>
+  								<span class="pull-right">75%</span>
+  							</div>
+  
+  							<div class="progress progress-mini">
+  								<div style="width:75%" class="progress-bar progress-bar-warning"></div>
+  							</div>
+  						</a>
+  					</li>
+  
+  					<li>
+  						<a href="#">
+  							<div class="clearfix">
+  								<span class="pull-left">Xiphong đáy</span>
+  								<span class="pull-right">45%</span>
+  							</div>
+  
+  							<div class="progress progress-mini">
+  								<div style="width:45%" class="progress-bar progress-bar-danger"></div>
+  							</div>
+  						</a>
+  					</li>
+  
+  					<li>
+  						<a href="#">
+  							<div class="clearfix">
+  								<span class="pull-left">Báo cáo tuần</span>
+  								<span class="pull-right">20%</span>
+  							</div>
+  
+  							<div class="progress progress-mini">
+  								<div style="width:20%" class="progress-bar"></div>
+  							</div>
+  						</a>
+  					</li>
+  
+  					<li>
+  						<a href="#">
+  							<div class="clearfix">
+  								<span class="pull-left">Báo cáo ngày</span>
+  								<span class="pull-right">85%</span>
+  							</div>
+  
+  							<div class="progress progress-mini progress-striped active">
+  								<div style="width:85%" class="progress-bar progress-bar-success"></div>
+  							</div>
+  						</a>
+  					</li>
+  
+  					<li class="more">
+  						<a href="#">Xem thông công việc</a>
+  					</li>
+  				</ul>
+  				<!-- END Tasks Dropdown -->
+  			</li>
+  			<!-- END Button Tasks -->
+  
+  			<!-- BEGIN Button Notifications -->
+  			<li class="hidden-xs">
+  				<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+  					<i class="fa fa-bell"></i>
+  					<span class="badge badge-important">5</span>
+  				</a>
+  
+  				<!-- BEGIN Notifications Dropdown -->
+  				<ul class="dropdown-navbar dropdown-menu">
+  					<li class="nav-header">
+  						<i class="fa fa-warning"></i> 5 Thông báo mới
+  					</li>
+  
+  					<li class="notify">
+  						<a href="#">
+  							<i class="fa fa-comment orange"></i>
+  							<p>Tin từ chuyên gia</p>
+  							<span class="badge badge-warning">4</span>
+  						</a>
+  					</li>
+  
+  					<li class="notify">
+  						<a href="#">
+  							<i class="fa fa-twitter blue"></i>
+  							<p>Báo động oxy</p>
+  							<span class="badge badge-info">7</span>
+  						</a>
+  					</li>
+  
+  					<li class="notify">
+  						<a href="#">
+  							<img src="img/icon2.png" alt="Alex" />
+  							<p>Kiềm thấp. Đánh khoáng nâng lên</p>
+  						</a>
+  					</li>
+  
+  					<li class="notify">
+  						<a href="#">
+  							<i class="fa fa-bug pink"></i>
+  							<p>Cháy mô tơ ao A1</p>
+  						</a>
+  					</li>
+  
+  					<li class="notify">
+  						<a href="#">
+  							<i class="fa fa-shopping-cart green"></i>
+  							<p>Hết thức ăn máy số 2</p>
+  							<span class="badge badge-success">+10</span>
+  						</a>
+  					</li>
+  
+  					<li class="more">
+  						<a href="#">Xem thêm cảnh báo</a>
+  					</li>
+  				</ul>
+  				<!-- END Notifications Dropdown -->
+  			</li>
+  			<!-- END Button Notifications -->
+  
+  			<!-- BEGIN Button Messages -->
+  			<li class="hidden-xs">
+  				<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+  					<i class="fa fa-envelope"></i>
+  					<span class="badge badge-success">3</span>
+  				</a>
+  
+  				<!-- BEGIN Messages Dropdown -->
+  				<ul class="dropdown-navbar dropdown-menu">
+  					<li class="nav-header">
+  						<i class="fa fa-comments"></i> 3 Tin nhắn mới
+  					</li>
+  
+  					<li class="msg">
+  						<a href="#">
+  							<img src="img/icon2.png" alt="logo" />
+  							<div>
+  								<span class="msg-title">Phòng lab</span>
+  								<span class="msg-time">
+  <i class="fa fa-clock-o"></i>
+  <span>5 phút trước</span>
+  								</span>
+  							</div>
+  							<p>Ao số 1, khuẩn vàng cao > 10*5 CFU/ml. Cần diệt khuẩn gấp
+  							</p>
+  						</a>
+  					</li>
+  
+  					<li class="msg">
+  						<a href="#">
+  							<img src="img/icon2.png" alt="logo" />
+  							<div>
+  								<span class="msg-title">Kho hàng</span>
+  								<span class="msg-time">
+  <i class="fa fa-clock-o"></i>
+  <span>10 phút trước</span>
+  								</span>
+  							</div>
+  							<p>Đã có men tiêu hóa và bổ gan. Cần lên nhận trộn cữ trưa</p>
+  						</a>
+  					</li>
+  
+  					<li class="msg">
+  						<a href="#">
+  							<img src="img/icon2.png" alt="logo" />
+  							<div>
+  								<span class="msg-title">Chuyên gia</span>
+  								<span class="msg-time">
+  <i class="fa fa-clock-o"></i>
+  <span>18:24 Tối</span>
+  								</span>
+  							</div>
+  							<p>Ao 1 kiềm thấp, đánh 2 bao vôi canxi + 3 kg khoáng lúc 10h tối nay</p>
+  						</a>
+  					</li>
+  
+  					<li class="more">
+  						<a href="#">Xem thêm tin nhắn</a>
+  					</li>
+  				</ul>
+  				<!-- END Notifications Dropdown -->
+  			</li>
+  			<!-- END Button Messages -->
+  
+  			<!-- BEGIN Button User -->
+  			<li class="user-profile">
+  				<a data-toggle="dropdown" href="#" class="user-menu dropdown-toggle">
+  					<img class="nav-user-photo" src="img/icon2.png" alt="logo" />
+  					<span class="hhh" id="user_info">
+  iPond247 Pro
+  </span>
+  					<i class="fa fa-caret-down"></i>
+  				</a>
+  
+  				<!-- BEGIN User Dropdown -->
+  				<ul class="dropdown-menu dropdown-navbar" id="user_menu">
+  					<li class="nav-header">
+  						<i class="fa fa-clock-o"></i> Đăng nhập lúc 20:45
+  					</li>
+  
+  					<li>
+  						<a href="/profile/">
+  							<i class="fa fa-cog"></i> Hồ sơ cá nhân
+  						</a>
+  					</li>
+  
+  					<li>
+  						<a href="/profile/">
+  							<i class="fa fa-user"></i> Sửa thông tin
+  						</a>
+  					</li>
+  
+  					<li>
+  						<a href="/aboutus/">
+  							<i class="fa fa-question"></i> Hỗ trợ
+  						</a>
+  					</li>
+  
+  					<li class="divider visible-xs"></li>
+  
+  					<li class="visible-xs">
+  						<a href="#">
+  							<i class="fa fa-tasks"></i> Công việc
+  							<span class="badge badge-warning">4</span>
+  						</a>
+  					</li>
+  					<li class="visible-xs">
+  						<a href="#">
+  							<i class="fa fa-bell"></i> Thông báo
+  							<span class="badge badge-important">8</span>
+  						</a>
+  					</li>
+  					<li class="visible-xs">
+  						<a href="#">
+  							<i class="fa fa-envelope"></i> Tin nhắn
+  							<span class="badge badge-success">5</span>
+  						</a>
+  					</li>
+  
+  					<li class="divider"></li>
+  
+  					<li>
+  						<a href="#">
+  							<i class="fa fa-off"></i> Thoát ra
+  						</a>
+  					</li>
+  				</ul>
+  				<!-- BEGIN User Dropdown -->
+  			</li>
+  			<!-- END Button User -->
+  		</ul>
+  		<!-- END Navbar Buttons -->
+  	</div>
+  	<!-- END Navbar -->
+  
+  	<!-- BEGIN Container -->
+  	<div class="container" id="main-container">
+  		<!-- BEGIN Sidebar -->
+  		<div id="sidebar" class="navbar-collapse collapse">
+  			<!-- BEGIN Navlist -->
+  			<ul class="nav nav-list">
+  				<!-- BEGIN Search Form -->
+  				<li>
+  					<form target="#" method="GET" class="search-form">
+  						<span class="search-pan">
+  <button type="submit">
+  <i class="fa fa-search"></i>
+  </button>
+  <input type="text" name="search" placeholder="Search ..." autocomplete="off" />
+  </span>
+  					</form>
+  				</li>
+  				<!-- END Search Form -->
+  				<li class="active">
+  					<a href="/index.html">
+  						<i class="fa fa-dashboard"></i>
+  						<span>Bảng điều khiển</span>
+  					</a>
+  				</li>
+                  <li>
+  					<a href="#" class="dropdown-toggle">
+  						<i class="fa fa-edit"></i>
+  						<span>Báo cáo</span>
+  						<b class="arrow fa fa-angle-right"></b>
+  					</a>
+  
+  					<!-- BEGIN Submenu -->
+  					<ul class="submenu">
+  						<li>
+  							<a href="/daily-report/">Báo cáo ngày</a>
+  						</li>
+  						<li>
+  							<a href="/weekly-report/">Báo cáo tuần</a>
+  						</li>
+  						<li>
+  							<a href="form_wizard.html">Báo cáo tháng</a>
+  						</li>
+  						<li>
+  							<a href="form_validation.html">Tổng kết vụ</a>
+  						</li>
+  					</ul>
+  					<!-- END Submenu -->
+  				</li>
+  				
+                  <li>
+  					<a href="/calendar/">
+  						<i class="fa fa-calendar"></i>
+  						<span>Lịch làm việc</span>
+  					</a>
+  				</li>
+                  <li>
+  					<a href="#" class="dropdown-toggle">
+  						<i class="fa fa-file-text-o"></i>
+  						<span>Thông tin</span>
+  						<b class="arrow fa fa-angle-right"></b>
+  					</a>
+  
+  					<!-- BEGIN Submenu -->
+  					<ul class="submenu">
+  						<li>
+  							<a href="/login/">Đăng ký - Đăng nhập</a>
+  						</li>
+  						<!-- Ẩn email -  <li><span>Email</span>
+  							<ul>
+  								<li>
+  									<a href="extra_mail-list.html">Inbox</a>
+  								</li>
+  								<li>
+  									<a href="extra_mail-msg.html">Mail Thread</a>
+  								</li>
+  								<li>
+  									<a href="extra_mail-compose.html">Compose</a>
+  								</li>
+  							</ul>
+  						</li> --hết ẩn -->
+  						<li>
+  							<a href="/profile/">Hồ sơ</a>
+  						</li>
+  						<li>
+  							<a href="extra_invoice.html">Hóa đơn</a>
+  						</li>
+  						<li>
+  							<a href="extra_search.html">Tìm kiếm</a>
+  						</li>
+  					</ul>
+  					<!-- END Submenu -->
+  				</li>
+  				<li>
+  					<a href="/aboutus/">
+  						<i class="fa fa-text-width"></i>
+  						<span>Giới thiệu</span>
+  					</a>
+  				</li>
+                  <!-- Ẩn trang bên dưới
+                  <li>
+  					<a href="typography.html">
+  						<i class="fa fa-text-width"></i>
+  						<span>Typography</span>
+  					</a>
+  				</li>
+  
+  				<li>
+  					<a href="#" class="dropdown-toggle">
+  						<i class="fa fa-desktop"></i>
+  						<span>UI Elements</span>
+  						<b class="arrow fa fa-angle-right"></b>
+  					</a>
+  
+  					<!-- BEGIN Submenu 
+  					<ul class="submenu">
+  						<li>
+  							<a href="ui_general.html">General</a>
+  						</li>
+  						<li>
+  							<a href="ui_button.html">Button</a>
+  						</li>
+  						<li>
+  							<a href="ui_tabs.html">Tab & Accordion</a>
+  						</li>
+  						<li>
+  							<a href="ui_slider.html">Slider</a>
+  						</li>
+  						<li>
+  							<a href="ui_tile.html">Tile</a>
+  						</li>
+  						<li>
+  							<a href="ui_timeline.html">Timeline</a>
+  						</li>
+  						<li>
+  							<a href="ui_chart.html">Chart</a>
+  						</li>
+  						<li>
+  							<a href="ui_message.html">Conversation</a>
+  						</li>
+  						<li>
+  							<a href="ui_horizontal-menu.html">Horizontal Menu</a>
+  						</li>
+  						<li>
+  							<a href="ui_icon.html">Icon</a>
+  						</li>
+  					</ul>
+  					<!-- END Submenu 
+  				</li>
+  
+  				
+  
+  				<li>
+  					<a href="#" class="dropdown-toggle">
+  						<i class="fa fa-list"></i>
+  						<span>Tables</span>
+  						<b class="arrow fa fa-angle-right"></b>
+  					</a>
+  
+  					<!-- BEGIN Submenu 
+  					<ul class="submenu">
+  						<li>
+  							<a href="table_basic.html">Basic</a>
+  						</li>
+  						<li>
+  							<a href="table_advance.html">Advance</a>
+  						</li>
+  						<li>
+  							<a href="table_dynamic.html">Dynamic</a>
+  						</li>
+  					</ul>
+  					<!-- END Submenu 
+  				</li>
+  
+  				<li>
+  					<a href="#" class="dropdown-toggle">
+  						<i class="fa fa-globe"></i>
+  						<span>Maps</span>
+  						<b class="arrow fa fa-angle-right"></b>
+  					</a>
+  
+  					<!-- BEGIN Submenu 
+  					<ul class="submenu">
+  						<li>
+  							<a href="map_google.html">Google Maps</a>
+  						</li>
+  						<li>
+  							<a href="map_vector.html">Vector Maps</a>
+  						</li>
+  					</ul>
+  					<!-- END Submenu 
+  				</li>
+  
+  				<li>
+  					<a href="box.html">
+  						<i class="fa fa-list-alt"></i>
+  						<span>Box</span>
+  					</a>
+  				</li>
+  
+  				<li>
+  					<a href="calendar.html">
+  						<i class="fa fa-calendar"></i>
+  						<span>Calendar</span>
+  					</a>
+  				</li>
+  
+  				<li>
+  					<a href="gallery.html">
+  						<i class="fa fa-picture-o"></i>
+  						<span>Gallery</span>
+  					</a>
+  				</li>
+  
+  				<li>
+  					<a href="grid.html">
+  						<i class="fa fa-th"></i>
+  						<span>Griding System</span>
+  					</a>
+  				</li>
+  
+  
+  
+  				<li>
+  					<a href="#" class="dropdown-toggle">
+  						<i class="fa fa-file"></i>
+  						<span>Other Pages</span>
+  						<b class="arrow fa fa-angle-right"></b>
+  					</a>
+  
+  					<!-- BEGIN Submenu 
+  					<ul class="submenu">
+  						<li>
+  							<a href="more_blank.html">Blank Page</a>
+  						</li>
+  						<li>
+  							<a href="more_full-width.html">Full Width Page</a>
+  						</li>
+  						<li><span>Errors</span>
+  							<ul>
+  								<li>
+  									<a href="more_error-404.html">Error 404</a>
+  								</li>
+  								<li>
+  									<a href="more_error-500.html">Error 500</a>
+  								</li>
+  							</ul>
+  						</li>
+  						<li>
+  							<a href="more_set-skin.html">Skin</a>
+  						</li>
+  						<li>
+  							<a href="more_set-sidebar-navbar-color.html">Sidebar &amp; Navbar</a>
+  						</li>
+  						<li>
+  							<a href="more_sidebar-collapsed.html">Collapsed Sidebar</a>
+  						</li>
+  					</ul>
+  					<!-- END Submenu -->
+  				</li>
+  			</ul>
+  			<!-- END Navlist -->
+      <!-- BEGIN Sidebar Collapse Button -->
+      <div id="sidebar-collapse" class="visible-lg">
+        <i class="fa fa-angle-double-left"></i>
+      </div>
+      <!-- END Sidebar Collapse Button -->
+    </div>
+    <!-- END Sidebar -->
+
+    <!-- BEGIN Content -->
+    <div id="main-content">
+      <!-- BEGIN Page Title -->
+      <div class="page-title">
+        <div>
+          <h1>
+              <img src="img/icon2.png" width="auto" height="60" /> Lịch làm việc</h1>
+          <h4>Lên kế hoạch làm việc tuần, tháng </h4>
+        </div>
+      </div>
+      <!-- END Page Title -->
+
+      <!-- BEGIN Breadcrumb -->
+      <div id="breadcrumbs">
+        <ul class="breadcrumb">
+          <li>
+            <i class="fa fa-home"></i>
+            <a href="index.html">Trang chủ</a>
+            <span class="divider">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </li>
+          <li class="active">Lịch làm việc</li>
+        </ul>
+      </div>
+      <!-- END Breadcrumb -->
+
+      <!-- BEGIN Main Content -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box">
+            <div class="box-title">
+              <h3>
+                <i class="fa fa-calendar"></i> Lịch làm việc</h3>
+              <div class="box-tool">
+                <a data-action="collapse" href="#">
+                  <i class="fa fa-chevron-up"></i>
+                </a>
+                <a data-action="close" href="#">
+                  <i class="fa fa-times"></i>
+                </a>
+              </div>
+            </div>
+            <div class="box-content">
+              <div class="row">
+                <div class="col-md-3 responsive" data-tablet="col-md-12 fix-margin" data-desktop="col-md-8">
+                  <!-- BEGIN DRAGGABLE EVENTS PORTLET-->
+                  <h3 class="event-form-title">Thêm việc mới</h3>
+                  <div id="external-events">
+                    <form class="inline-form">
+                      <p>
+                        <input type="text" value="" class="col-md-12" placeholder="Việc cần làm..." id="event_title" />
+                      </p>
+                      <p>
+                        <select id="event_priority" data-placeholder="Select Label..." class="col-md-12 chosen">
+                          <option value="default">Bình thường</option>
+                         <!-- Ẩn <option value="success">Lưu ý</option>
+                          <option value="info">Nhắc tôi</option> hết ẩn-->
+                          <option value="warning">Làm ngay</option>
+                          <option value="important">Quan trọng</option>
+                        </select>
+                      </p>
+                      <p>
+                        <a href="javascript:;" id="event_add" class="btn btn-primary">Thêm việc</a>
+                      </p>
+                    </form>
+                    <hr />
+                    <div id="event_box"></div>
+                    <p>
+                      <label for="drop-remove">
+                        <input type="checkbox" id="drop-remove" /> Xóa việc</label>
+                    </p>
+                    <hr class="visible-sm" />
+                  </div>
+                  <!-- END DRAGGABLE EVENTS PORTLET-->
+                </div>
+                <div class="col-md-9">
+                  <div id="calendar" class="has-toolbar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Main Content -->
+
+      <footer>
+				<p>2020 © iPond247 Pro Template.</p>
+			</footer>
+
+      <a id="btn-scrollup" class="btn btn-circle btn-lg" href="#">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+    <!-- END Content -->
+  </div>
+  <!-- END Container -->
+
+
+  <!--basic scripts-->
+  <script src="../../ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/jquery/jquery-2.1.1.min.js"><\/script>')</script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="assets/jquery-cookie/jquery.cookie.js"></script>
+
+  <!--page specific plugin scripts-->
+  <script src="assets/jquery-ui/jquery-ui.min.js"></script>
+  <script src="assets/fullcalendar/fullcalendar/fullcalendar.min.js"></script>
+
+  <!--flaty scripts-->
+  <script src="js/flaty.js"></script>
+  <script src="js/flaty-demo-codes.js"></script>
+</body>
+
+<!-- Mirrored from thetheme.io/flaty/calendar.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2020 05:35:30 GMT -->
+
+</html>
